@@ -18,7 +18,7 @@ public:
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
-    string toString();
+    virtual string toString();
     string getSkinCovering();
     int getGestationPeriod();
     void setSkinCovering(string skin_covering);

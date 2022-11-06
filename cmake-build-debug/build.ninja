@@ -49,6 +49,20 @@ cmake_ninja_workdir = C$:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/cmake-build-de
 
 build cmake_object_order_depends_target_PerfectZoo: phony || CMakeFiles/PerfectZoo.dir
 
+build CMakeFiles/PerfectZoo.dir/Groups/Mammal.cpp.obj: CXX_COMPILER__PerfectZoo_Debug C$:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/Groups/Mammal.cpp || cmake_object_order_depends_target_PerfectZoo
+  DEP_FILE = CMakeFiles\PerfectZoo.dir\Groups\Mammal.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/. -IC:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/Groups
+  OBJECT_DIR = CMakeFiles\PerfectZoo.dir
+  OBJECT_FILE_DIR = CMakeFiles\PerfectZoo.dir\Groups
+
+build CMakeFiles/PerfectZoo.dir/Groups/Reptile.cpp.obj: CXX_COMPILER__PerfectZoo_Debug C$:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/Groups/Reptile.cpp || cmake_object_order_depends_target_PerfectZoo
+  DEP_FILE = CMakeFiles\PerfectZoo.dir\Groups\Reptile.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/. -IC:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/Groups
+  OBJECT_DIR = CMakeFiles\PerfectZoo.dir
+  OBJECT_FILE_DIR = CMakeFiles\PerfectZoo.dir\Groups
+
 build CMakeFiles/PerfectZoo.dir/Animal.cpp.obj: CXX_COMPILER__PerfectZoo_Debug C$:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/Animal.cpp || cmake_object_order_depends_target_PerfectZoo
   DEP_FILE = CMakeFiles\PerfectZoo.dir\Animal.cpp.obj.d
   FLAGS = -g -std=gnu++14
@@ -78,7 +92,7 @@ build CMakeFiles/PerfectZoo.dir/Zoo.cpp.obj: CXX_COMPILER__PerfectZoo_Debug C$:/
 #############################################
 # Link the executable PerfectZoo.exe
 
-build PerfectZoo.exe: CXX_EXECUTABLE_LINKER__PerfectZoo_Debug CMakeFiles/PerfectZoo.dir/Animal.cpp.obj CMakeFiles/PerfectZoo.dir/main.cpp.obj CMakeFiles/PerfectZoo.dir/Zoo.cpp.obj
+build PerfectZoo.exe: CXX_EXECUTABLE_LINKER__PerfectZoo_Debug CMakeFiles/PerfectZoo.dir/Groups/Mammal.cpp.obj CMakeFiles/PerfectZoo.dir/Groups/Reptile.cpp.obj CMakeFiles/PerfectZoo.dir/Animal.cpp.obj CMakeFiles/PerfectZoo.dir/main.cpp.obj CMakeFiles/PerfectZoo.dir/Zoo.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PerfectZoo.dir

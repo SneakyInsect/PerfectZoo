@@ -19,6 +19,10 @@ public:
     Zoo& operator+=(Animal *animal);
     Zoo& operator-=(Animal *animal);
 
+    //access the animal at the given index in the animals vector
+    Animal* operator[](int index);
+    ~Zoo();
+
     int getAnimalsCount();
     string toString();
 };

@@ -1,15 +1,18 @@
 #include "Animal.h"
+#include <iostream>
 
 using namespace std;
 
 Animal::Animal()
 {
-    common_name = "No name";
-    weight = 0;
+    this->name = "NOT SET";
+    this->common_name = "UNKNOWN";
+    this->weight = 0;
 }
 
 Animal::Animal(string common_name, int weight)
 {
+    this->name = "NOT SET";
     this->common_name = common_name;
     this->weight = weight;
 }
@@ -49,6 +52,11 @@ void Animal::setName(string name)
 string Animal::toString()
 {
     return "I'm " + name + " the " + common_name + " and I weight " + to_string(weight) + "kg.";
+}
+
+void Animal::LooseTail()
+{
+    cout << "I'm not a lizard >.<" << endl;
 }
 
 

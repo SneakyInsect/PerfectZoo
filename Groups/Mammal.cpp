@@ -1,12 +1,15 @@
-#include ".\Mammal.h"
+#include "Mammal.h"
 
 using namespace std;
 
-Mammal::Mammal() : Animal(){}
+Mammal::Mammal() : 
+Animal(), skin_covering("NOT SET"), gestation_period(0){}
 
-Mammal::Mammal(string common_name, int weight) : Animal(common_name, weight){}
+Mammal::Mammal(string common_name, int weight) : 
+Animal(common_name, weight), skin_covering("NOT SET"), gestation_period(0){}
 
-Mammal::Mammal(string name, string common_name, int weight) : Animal(name, common_name, weight){}
+Mammal::Mammal(string name, string common_name, int weight) : 
+Animal(name, common_name, weight), skin_covering("NOT SET"), gestation_period(0){}
 
 Mammal::Mammal(string name, string common_name, int weight, string skin_covering, int gestation_period) : 
 Animal(name, common_name, weight), skin_covering(skin_covering), gestation_period(gestation_period){}
@@ -33,7 +36,7 @@ void Mammal::setGestationPeriod(int gestation_period)
 
 string Mammal::toString()
 {
-    return Animal::toString() + ". I'm a mammal and I have " + skin_covering + " and my gestation period is: " + gestation_period;
+    return Animal::toString() + " I'm a mammal and I have " + this->skin_covering + " and my gestation period is " + to_string(this->gestation_period) + " months";
 }
 
 

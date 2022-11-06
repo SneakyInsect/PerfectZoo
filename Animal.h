@@ -21,7 +21,8 @@ public:
     void setCommonName(string name);
     void setWeight(int weight);
     void setName(string name);
-    string toString();
+    virtual string toString();
+    virtual void LooseTail();
 };
     
 
