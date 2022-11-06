@@ -10,21 +10,22 @@ using namespace std;
 
 class Bird : public Animal {
     string feather_color;
-    int wing_span;
+    float wing_span;
 public:
     Bird();
     Bird(string common_name, int weight);
     Bird(string name, string common_name, int weight);
-    Bird(string name, string common_name, int weight, string feather_color, int wing_span);
+    Bird(string name, string common_name, int weight, string feather_color, float wing_span);
     string getCommonName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
     virtual string toString();
     string getFeatherColor();
-    int getWingSpan();
+    float getWingSpan();
     void setFeatherColor(string feather_color);
-    void setWingSpan(int wing_span);
+    void setWingSpan(float wing_span);
+    virtual string whatAmI();
 };
 
 #endif //ANIMAL_BIRD_H

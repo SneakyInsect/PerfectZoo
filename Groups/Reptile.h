@@ -26,6 +26,7 @@ public:
     void setCamouflage(string camouflage);
     void setTailLength(float tail_length);
     virtual void LooseTail();
+    virtual string whatAmI();
 };
 
 #endif //ANIMAL_REPTILE_H

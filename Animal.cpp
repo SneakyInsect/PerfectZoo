@@ -59,6 +59,19 @@ void Animal::LooseTail()
     cout << "I'm not a lizard >.<" << endl;
 }
 
+string Animal::whatAmI() {
+    return "Animal";
+}
+
+string Animal::getSpecialString() {
+    return "random";
+}
+
+
+float Animal::getSpecialFloat() {
+    return 23.0;
+}
+
 
 
 // Path: Animal.h

@@ -10,22 +10,23 @@ using namespace std;
 
 class Fish : public Animal {
     string scales_shape;
-    int swim_speed;
+    float swim_speed;
 public:
     Fish();
     Fish(string common_name, int weight);
     Fish(string name, string common_name, int weight);
-    Fish(string name, string common_name, int weight, string scales_shape, int swim_speed);
+    Fish(string name, string common_name, int weight, string scales_shape, float swim_speed);
     string getCommonName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
     virtual string toString();
     string getScalesShape();
-    int getSwimSpeed();
+    float getSwimSpeed();
     void setScalesShape(string scales_shape);
-    void setSwimSpeed(int swim_speed);
+    void setSwimSpeed(float swim_speed);
     void Speak();
+    virtual string whatAmI();
 };
 
 #endif //ANIMAL_FISH_H

@@ -8,21 +8,22 @@
 
 class Mammal : public Animal {
     string skin_covering;
-    int gestation_period;
+    float gestation_period;
 public:
     Mammal();
     Mammal(string common_name, int weight);
     Mammal(string name, string common_name, int weight);
-    Mammal(string name, string common_name, int weight, string skin_covering, int gestation_period);
+    Mammal(string name, string common_name, int weight, string skin_covering, float gestation_period);
     string getCommonName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
     virtual string toString();
     string getSkinCovering();
-    int getGestationPeriod();
+    float getGestationPeriod();
     void setSkinCovering(string skin_covering);
-    void setGestationPeriod(int gestation_period);
+    void setGestationPeriod(float gestation_period);
+    virtual string whatAmI();
 
 };
 

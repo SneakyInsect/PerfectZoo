@@ -23,6 +23,9 @@ public:
     void setName(string name);
     virtual string toString();
     virtual void LooseTail();
+    virtual string whatAmI();
+    virtual string getSpecialString();
+    virtual float getSpecialFloat();
 };
     
 

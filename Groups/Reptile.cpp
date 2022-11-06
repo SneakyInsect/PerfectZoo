@@ -49,3 +49,6 @@ void Reptile::LooseTail()
         cout<<"No tail no problem 8)"<<endl;
     }
 }
+string Reptile::whatAmI() {
+    return "Reptile";
+}

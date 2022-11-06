@@ -26,6 +26,7 @@ public:
     void setSkinPattern(string skin_pattern);
     void setJumpHeight(float jump_height);
     void Ribbit();
+    virtual string whatAmI();
 };
 
 #endif //ANIMAL_AMPHIBIAN_H

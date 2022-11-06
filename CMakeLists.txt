@@ -11,8 +11,14 @@ add_executable(PerfectZoo
         Groups/Mammal.cpp
         Groups/Reptile.h
         Groups/Reptile.cpp
+        Groups/Amphibian.h
+        Groups/Amphibian.cpp
+        Groups/Bird.h
+        Groups/Bird.cpp
+        Groups/Fish.h
+        Groups/Fish.cpp
         Animal.cpp
         Animal.h
         main.cpp
         Zoo.cpp
-        Zoo.h)
+        Zoo.h Breeder.h Breeder.cpp)
