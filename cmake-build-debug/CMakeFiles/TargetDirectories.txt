@@ -1,0 +1,3 @@
+C:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/cmake-build-debug/CMakeFiles/PerfectZoo.dir
+C:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/samue/Desktop/Sem3/OOP/PerfectZoo/cmake-build-debug/CMakeFiles/rebuild_cache.dir

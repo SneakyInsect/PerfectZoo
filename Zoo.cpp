@@ -36,7 +36,7 @@ int Zoo::getAnimalsCount()
 
 string Zoo::toString()
 {
-    string result = "Zoo " + ZooName + " has " + to_string(animals_count) + " animals: \n";
+    string result = "Zoo \"" + ZooName + "\" has " + to_string(animals_count) + " animals: \n";
     for (int i = 0; i < animals.size(); i++)
     {
         result += animals[i]->toString() + "\n";

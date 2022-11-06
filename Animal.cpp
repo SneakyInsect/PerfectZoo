@@ -8,9 +8,16 @@ Animal::Animal()
     weight = 0;
 }
 
-Animal::Animal(string name, int weight)
+Animal::Animal(string common_name, int weight)
 {
-    common_name = name;
+    this->common_name = common_name;
+    this->weight = weight;
+}
+
+Animal::Animal(string name, string common_name, int weight)
+{
+    this->name = name;
+    this->common_name = common_name;
     this->weight = weight;
 }
 
@@ -26,7 +33,7 @@ int Animal::getWeight()
 
 void Animal::setCommonName(string name)
 {
-    common_name = name;
+    this->common_name = name;
 }
 
 void Animal::setWeight(int weight)
@@ -34,9 +41,14 @@ void Animal::setWeight(int weight)
     this->weight = weight;
 }
 
+void Animal::setName(string name)
+{
+    this->name = name;
+}
+
 string Animal::toString()
 {
-    return "I'm " + common_name + " and I weight " + to_string(weight) + "kg.";
+    return "I'm " + name + " the " + common_name + " and I weight " + to_string(weight) + "kg.";
 }
 
 

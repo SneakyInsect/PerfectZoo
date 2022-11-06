@@ -1,0 +1,20 @@
+# ninja log v5
+1	308	6894403278814818	CMakeFiles/PerfectZoo.dir/Animal.cpp.obj	359bff7b85053461
+5	340	6894403279115291	CMakeFiles/PerfectZoo.dir/main.cpp.obj	d6e669b61524306f
+14	356	6894403279314401	CMakeFiles/PerfectZoo.dir/PerfectZoo.cpp.obj	ad0d921b152f9665
+10	370	6894403279414214	CMakeFiles/PerfectZoo.dir/Zoo.cpp.obj	8180f506e5cb5b3c
+3	172	6894403592516884	build.ninja	38d1cef8eeab9da2
+3	107	6894403594213341	PerfectZoo.exe	77077a364311b8fe
+2	319	6894404260116347	CMakeFiles/PerfectZoo.dir/Zoo.cpp.obj	8180f506e5cb5b3c
+320	421	6894404261064855	PerfectZoo.exe	77077a364311b8fe
+3	280	6894416372321223	CMakeFiles/PerfectZoo.dir/Animal.cpp.obj	359bff7b85053461
+12	329	6894416372805681	CMakeFiles/PerfectZoo.dir/Zoo.cpp.obj	8180f506e5cb5b3c
+7	332	6894416372831052	CMakeFiles/PerfectZoo.dir/main.cpp.obj	d6e669b61524306f
+3	312	6894416729057738	CMakeFiles/PerfectZoo.dir/main.cpp.obj	d6e669b61524306f
+313	415	6894416730040788	PerfectZoo.exe	77077a364311b8fe
+3	269	6894417386142814	CMakeFiles/PerfectZoo.dir/Animal.cpp.obj	359bff7b85053461
+269	372	6894417387138907	PerfectZoo.exe	77077a364311b8fe
+4	321	6894419551302869	CMakeFiles/PerfectZoo.dir/main.cpp.obj	d6e669b61524306f
+3	422	6894420674322843	CMakeFiles/PerfectZoo.dir/main.cpp.obj	d6e669b61524306f
+3	310	6894421888001680	CMakeFiles/PerfectZoo.dir/main.cpp.obj	d6e669b61524306f
+311	414	6894421888965323	PerfectZoo.exe	77077a364311b8fe
