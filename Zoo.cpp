@@ -101,5 +101,4 @@ void Zoo::addRandomAnimal()
     }
 
     *this += animal;
-    this->animals_count++;
 }

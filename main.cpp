@@ -13,21 +13,12 @@ using namespace std;
 int main(){
     Zoo *zoo = new Zoo("Perfect Zoo");
 
-    cout<<zoo->toString()<<endl;
-
-    Animal *a, *b, *c, *d, *e;
-    
-    a = new Amphibian("Teresa", "frog", 1, "striped", 0.5);
-    b = new Bird("Polly", "parrot", 2, "green", 0.5);
-    c = new Fish("Nemo", "clownfish", 0.5, "triangle", 20);
-    d = new Mammal("Bobby", "dog", 10, "fur", 3);
-    e = new Reptile("Sally", "snake", 3, "Scottish Flag", 1);
-
-    *zoo += a;
-    *zoo += b;  
-    *zoo += c;
-    *zoo += d;
-    *zoo += e;
+    int n;
+    cout<<"How many starting animals would you like: (int)"<<endl;
+    cin>>n;
+    for(int i = 0; i < n; i++) {
+        zoo->addRandomAnimal();
+    }
 
     cout<<zoo->toString()<<endl;
 

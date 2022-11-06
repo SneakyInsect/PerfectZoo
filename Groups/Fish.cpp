@@ -58,14 +58,6 @@ float Fish::getSpecialFloat() {
     return ((float)rand() / (float)RAND_MAX) * 100;
 }
 
-void Fish::setSpecialString(string s){
-    this->scales_shape = s;
-}
-
-void Fish::setSpecialFloat(float f){
-    this->swim_speed = f;
-}
-
 string Fish::chooseCommonName(){
     vector <string> commonNames = {"goldfish", "tuna", "salmon", "bass", "trout", "cod", "catfish", "carp", "shark", "eel", "swordfish", "sturgeon", "mackerel", "pike", "herring", "anchovy", "sardine", "mullet", "halibut", "flounder", "sole"};
     int num = rand() % commonNames.size();  

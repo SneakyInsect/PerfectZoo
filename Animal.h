@@ -26,8 +26,6 @@ public:
     virtual string toString();
     virtual void LooseTail();
     virtual string whatAmI();
-    virtual void setSpecialString(string s);
-    virtual void setSpecialFloat(float f);
     static void getSpecialString();
     static void getSpecialFloat();
 

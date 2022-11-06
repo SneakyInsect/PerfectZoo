@@ -59,14 +59,6 @@ float Amphibian::getSpecialFloat(){
     return ((float) rand() / (float) RAND_MAX) * 100;
 }
 
-void Amphibian::setSpecialString(string s){
-    this->skin_pattern = s;
-}
-
-void Amphibian::setSpecialFloat(float f){
-    this->jump_height = f;
-}
-
 string Amphibian::chooseCommonName(){
     vector <string> cn = {"Frog", "Toad", "Salamander", "Newt", "Axolotl", "Caecilian", "Giant Salamander"};
     int num = rand() % cn.size();

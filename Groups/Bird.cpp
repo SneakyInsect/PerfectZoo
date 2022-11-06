@@ -13,7 +13,7 @@ Bird::Bird(string name, string common_name, int weight, string feather_color, fl
 Animal(name, common_name, weight), feather_color(feather_color), wing_span(wing_span) {}
 
 string Bird::toString(){
-    return Animal::toString() + " I'm a bird my feathers are " + this->feather_color + " and I have a wingspan of " + to_string(this->wing_span) + " m";
+    return Animal::toString() + " I'm a bird my feathers are " + this->feather_color + " and I have a wingspan of " + to_string(this->wing_span) + " cm";
 }
 
 string Bird::getFeatherColor(){
@@ -48,12 +48,11 @@ float Bird::getSpecialFloat(){
     return ((float)rand() / (float)RAND_MAX) * 200;
 }
 
-void Bird::setSpecialString(string s){
-    this->feather_color = s;
-}
+string Bird::chooseCommonName(){
+    vector <string> cn = {"cardinal", "eagle", "falcon", "mockingbird", "owl", "parrot", "peacock", "penguin"};
+    int num = rand()%cn.size();
+    return cn[num];
 
-void Bird::setSpecialFloat(float f){
-    this->wing_span = f;
 }
 
 

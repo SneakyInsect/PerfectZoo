@@ -53,14 +53,6 @@ float Mammal::getSpecialFloat(){
     return ((float) rand() / (float) RAND_MAX) * 12;
 }
 
-void Mammal::setSpecialString(string s){
-    this->skin_covering = s;
-}
-
-void Mammal::setSpecialFloat(float f){
-    this->gestation_period = f;
-}
-
 string Mammal::chooseCommonName(){
     vector <string> commonNames = {"elephant", "lion", "dog", "cat", "seal", "deer"};
     int num = rand() % commonNames.size();

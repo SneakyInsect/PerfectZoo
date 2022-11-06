@@ -30,8 +30,6 @@ public:
     virtual string whatAmI();
     static string getSpecialString();
     static float getSpecialFloat();
-    virtual void setSpecialString(string s);
-    virtual void setSpecialFloat(float f);
     };
 
 #endif //ANIMAL_AMPHIBIAN_H
