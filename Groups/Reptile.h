@@ -17,7 +17,7 @@ public:
     Reptile(string name, string common_name, int weight);
     Reptile(string name, string common_name, int weight, string camouflage, float tail_length);
     string getCommonName();
-    virtual string chooseCommonName();
+    static string chooseCommonName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
@@ -28,8 +28,8 @@ public:
     void setTailLength(float tail_length);
     virtual void LooseTail();
     virtual string whatAmI();
-    virtual string getSpecialString();
-    virtual float getSpecialFloat();
+    static string getSpecialString();
+    static float getSpecialFloat();
     virtual void setSpecialString(string s);
     virtual void setSpecialFloat(float f);
 };

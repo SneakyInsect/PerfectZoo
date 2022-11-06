@@ -17,7 +17,7 @@ public:
     Bird(string name, string common_name, int weight);
     Bird(string name, string common_name, int weight, string feather_color, float wing_span);
     string getCommonName();
-    virtual string chooseCommonName();
+    static string chooseCommonName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
@@ -27,8 +27,8 @@ public:
     void setFeatherColor(string feather_color);
     void setWingSpan(float wing_span);
     virtual string whatAmI();
-    virtual string getSpecialString();
-    virtual float getSpecialFloat();
+    static string getSpecialString();
+    static float getSpecialFloat();
     virtual void setSpecialString(string s);
     virtual void setSpecialFloat(float f);
 };

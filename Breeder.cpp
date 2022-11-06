@@ -57,31 +57,37 @@ Animal* Breeder::crossedOver(Animal *a1, Animal *a2){
         name = a1->chooseName();
         animalType = a1->whatAmI();
         common_name = a1->getCommonName();
-        specialFeature = a1->getSpecialString();
-        specialFeature2 = a1->getSpecialFloat();
         }else{
         name = a2->chooseName();
         animalType = a2->whatAmI();
         common_name = a2->getCommonName();
-        specialFeature = a2->getSpecialString();
-        specialFeature2 = a2->getSpecialFloat();
     }
     
     int weight = (a1->getWeight() + a2->getWeight()) / 2;
 
     if(animalType == "Mammal"){
+        specialFeature = Mammal::getSpecialString();
+        specialFeature2 = Mammal::getSpecialFloat();
         new_animal = new Mammal(name, common_name, weight, specialFeature, specialFeature2);
     }
     else if(animalType == "Reptile"){
+        specialFeature = Reptile::getSpecialString();
+        specialFeature2 = Reptile::getSpecialFloat();
         new_animal = new Reptile(name, common_name, weight, specialFeature, specialFeature2);
     }
     else if(animalType == "Bird"){
+        specialFeature = Bird::getSpecialString();
+        specialFeature2 = Bird::getSpecialFloat();
         new_animal = new Bird(name, common_name, weight, specialFeature, specialFeature2);
     }
     else if(animalType == "Fish"){
+        specialFeature = Fish::getSpecialString();
+        specialFeature2 = Fish::getSpecialFloat();
         new_animal = new Fish(name, common_name, weight, specialFeature, specialFeature2);
     }
     else if(animalType == "Amphibian"){
+        specialFeature = Amphibian::getSpecialString();
+        specialFeature2 = Amphibian::getSpecialFloat();
         new_animal = new Amphibian(name, common_name, weight, specialFeature, specialFeature2);
     }
     else{

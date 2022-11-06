@@ -63,15 +63,6 @@ string Animal::whatAmI() {
     return "Animal";
 }
 
-string Animal::getSpecialString() {
-    return "random";
-}
-
-
-float Animal::getSpecialFloat() {
-    return 23.0;
-}
-
 string Animal::chooseName() {
     vector <string> names = {"Bobby", "Sally", "Bob", "Sue", "John", "Jane",
 "Joe", "Mary", "Tom", "Jerry", "Mickey", "Donald", "Goofy", "Minnie",
@@ -93,9 +84,6 @@ string Animal::chooseName() {
     return names[num];
 }
 
-string Animal::chooseCommonName() {
-    return "random";   
-}
 
 
 

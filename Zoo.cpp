@@ -61,33 +61,45 @@ string Zoo::toString()
 void Zoo::addRandomAnimal()
 {
     int num = rand() % 5;
-    string name, common_name, weight, trait1;
+    string name, common_name, trait1;
+    int weight = rand() % 1000;
     float trait2;
     Animal *animal;
-    switch (num)
-    {
-        case 0:
-            animal = new Mammal();
-            break;
-        case 1:
-            animal = new Bird();
-            break;
-        case 2:
-            animal = new Fish();
-            break;
-        case 3:
-            animal = new Reptile();
-            break;
-        case 4:
-            animal = new Amphibian();
-            break;        
+
+    name = Animal::chooseName();
+    switch (num){
+    case 0:
+        common_name = Mammal::chooseCommonName();
+        trait1 = Mammal::getSpecialString();
+        trait2 = Mammal::getSpecialFloat();
+        animal = new Mammal(name, common_name, weight, trait1, trait2);
+        break;
+    case 1:
+        common_name = Bird::chooseCommonName();
+        trait1 = Bird::getSpecialString();
+        trait2 = Bird::getSpecialFloat();
+        animal = new Bird(name, common_name, weight, trait1, trait2);
+        break;
+    case 2:
+        common_name = Fish::chooseCommonName();
+        trait1 = Fish::getSpecialString();
+        trait2 = Fish::getSpecialFloat();
+        animal = new Fish(name, common_name, weight, trait1, trait2);
+        break;
+    case 3:
+        common_name = Reptile::chooseCommonName();
+        trait1 = Reptile::getSpecialString();
+        trait2 = Reptile::getSpecialFloat();
+        animal = new Reptile(name, common_name, weight, trait1, trait2);
+        break;
+    case 4:
+        common_name = Amphibian::chooseCommonName();
+        trait1 = Amphibian::getSpecialString();
+        trait2 = Amphibian::getSpecialFloat();
+        animal = new Amphibian(name, common_name, weight, trait1, trait2);
+        break;
     }
-    
-            animal->setName(animal->chooseName());
-            animal->setCommonName(animal->chooseCommonName());
-            animal->setWeight(rand() % 1000);
-            animal->setSpecialString(animal->getSpecialString());
-            animal->setSpecialFloat(animal->getSpecialFloat());
+
     *this += animal;
     this->animals_count++;
 }

@@ -18,8 +18,7 @@ public:
     Animal(string common_name, int weight);
     Animal(string name, string common_name, int weight);
     string getCommonName();
-    string chooseName();
-    virtual string chooseCommonName();
+    static string chooseName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
@@ -27,10 +26,11 @@ public:
     virtual string toString();
     virtual void LooseTail();
     virtual string whatAmI();
-    virtual string getSpecialString();
-    virtual float getSpecialFloat();
     virtual void setSpecialString(string s);
     virtual void setSpecialFloat(float f);
+    static void getSpecialString();
+    static void getSpecialFloat();
+
 };
     
 
