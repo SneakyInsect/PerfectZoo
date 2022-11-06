@@ -68,46 +68,26 @@ void Zoo::addRandomAnimal()
     {
         case 0:
             animal = new Mammal();
-            animal->setName(animal->chooseName());
-            animal->setCommonName(animal->chooseCommonName());
-            animal->setWeight(rand() % 1000);
-            animal->setSpecialString(animal->getSpecialString());
-            animal->setSpecialFloat(animal->getSpecialFloat());
             break;
         case 1:
             animal = new Bird();
-            animal->setName(animal->chooseName());
-            animal->setCommonName(animal->chooseCommonName());
-            animal->setWeight(rand() % 1000);
-            animal->setSpecialString(animal->getSpecialString());
-            animal->setSpecialFloat(animal->getSpecialFloat());
             break;
         case 2:
             animal = new Fish();
-            animal->setName(animal->chooseName());
-            animal->setCommonName(animal->chooseCommonName());
-            animal->setWeight(rand() % 1000);
-            animal->setSpecialString(animal->getSpecialString());
-            animal->setSpecialFloat(animal->getSpecialFloat());
             break;
         case 3:
             animal = new Reptile();
-            animal->setName(animal->chooseName());
-            animal->setCommonName(animal->chooseCommonName());
-            animal->setWeight(rand() % 1000);
-            animal->setSpecialString(animal->getSpecialString());
-            animal->setSpecialFloat(animal->getSpecialFloat());
             break;
         case 4:
             animal = new Amphibian();
+            break;        
+    }
+    
             animal->setName(animal->chooseName());
             animal->setCommonName(animal->chooseCommonName());
             animal->setWeight(rand() % 1000);
             animal->setSpecialString(animal->getSpecialString());
             animal->setSpecialFloat(animal->getSpecialFloat());
-            break;        
-    }
-    
     *this += animal;
     this->animals_count++;
 }
