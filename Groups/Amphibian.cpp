@@ -47,3 +47,29 @@ void Amphibian::Ribbit(){
 string Amphibian::whatAmI(){
     return "Amphibian";
 }
+
+string Amphibian::getSpecialString(){
+    vector <string> patterns = {"Polka Dots", "Moroccan", "Quatrefoil", "Chevron", "Honeycomb", "Damask", "Argyle", "Ogee", "Stripes", "Lattice", "Fleur de Lis"};
+    int num = rand() % patterns.size();
+    return patterns[num];
+}
+
+float Amphibian::getSpecialFloat(){
+
+    return ((float) rand() / (float) RAND_MAX) * 100;
+}
+
+void Amphibian::setSpecialString(string s){
+    this->skin_pattern = s;
+}
+
+void Amphibian::setSpecialFloat(float f){
+    this->jump_height = f;
+}
+
+string Amphibian::chooseCommonName(){
+    vector <string> cn = {"Frog", "Toad", "Salamander", "Newt", "Axolotl", "Caecilian", "Giant Salamander"};
+    int num = rand() % cn.size();
+    return cn[num];
+}
+

@@ -4,6 +4,11 @@
 #include <string>
 #include <vector>
 #include "Animal.h"
+#include "Groups\Mammal.h"
+#include "Groups\Reptile.h"
+#include "Groups\Fish.h"
+#include "Groups\Bird.h"
+#include "Groups\Amphibian.h"
 
 using namespace std;
 
@@ -22,6 +27,7 @@ public:
     //access the animal at the given index in the animals vector
     Animal* operator[](int index);
     ~Zoo();
+    void addRandomAnimal();
 
     int getAnimalsCount();
     string toString();

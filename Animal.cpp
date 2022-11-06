@@ -72,6 +72,31 @@ float Animal::getSpecialFloat() {
     return 23.0;
 }
 
+string Animal::chooseName() {
+    vector <string> names = {"Bobby", "Sally", "Bob", "Sue", "John", "Jane",
+"Joe", "Mary", "Tom", "Jerry", "Mickey", "Donald", "Goofy", "Minnie",
+"Mickey", "Pluto", "Daisy", "Bugs", "Daffy", "Elmer", "Tweety", "Sylvester",
+"Foghorn", "Pepe", "Porky", "Wile E. Coyote", "Road Runner", "Yosemite Sam",
+"Taz", "Speedy Gonzales", "Pepé Le Pew", "Marvin the Martian", "Bugs Bunny",
+"Tweety Bird", "Sylvester", "Yosemite Sam", "Porky Pig", "Daffy Duck", "Elmer Fudd",
+"Foghorn Leghorn", "Wile E. Coyote", "Road Runner", "Speedy Gonzales", "Marvin the Martian",
+"Taz", "Pepé Le Pew", "Bart", "Lisa", "Marge", "Homer", "Maggie", "Ned", "Maude", "Barney",
+"Moe", "Lenny", "Carl", "Apu", "Krusty", "Sideshow Bob", "Milhouse", "Ralph", "Nelson",
+"Otto", "Kearney", "Edna", "Todd", "Rod", "Jimbo", "Dolph", "Groundskeeper Willie",
+"Chief Wiggum", "Seymour Skinner", "Hans Moleman", "Waylon Smithers", "Kang", "Kodos",
+"Dr. Nick", "Dr. Hibbert", "Professor Frink", "Comic Book Guy", "Lenny", "Carl", "Moe",
+"Barney", "Apu", "Krusty", "Sideshow Bob", "Milhouse", "Ralph", "Nelson", "Otto", "Kearney",
+"Edna", "Todd", "Rod", "Jimbo", "Dolph", "Groundskeeper Willie", "Chief Wiggum", "Seymour Skinner",
+"Hans Moleman", "Waylon Smithers", "Kang", "Kodos", "Dr. Nick", "Dr. Hibbert", "Professor Frink", "Comic Book"};
+    
+    int num = rand() % names.size();
+    return names[num];
+}
+
+string Animal::chooseCommonName() {
+    return "random";   
+}
+
 
 
 // Path: Animal.h

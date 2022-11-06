@@ -17,6 +17,7 @@ public:
     Fish(string name, string common_name, int weight);
     Fish(string name, string common_name, int weight, string scales_shape, float swim_speed);
     string getCommonName();
+    virtual string chooseCommonName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
@@ -27,6 +28,10 @@ public:
     void setSwimSpeed(float swim_speed);
     void Speak();
     virtual string whatAmI();
+    virtual string getSpecialString();
+    virtual float getSpecialFloat();
+    virtual void setSpecialString(string s);
+    virtual void setSpecialFloat(float f);
 };
 
 #endif //ANIMAL_FISH_H

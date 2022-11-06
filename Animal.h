@@ -2,6 +2,7 @@
 #define PERFECTZOO_ANIMAL_H
 
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -17,6 +18,8 @@ public:
     Animal(string common_name, int weight);
     Animal(string name, string common_name, int weight);
     string getCommonName();
+    string chooseName();
+    virtual string chooseCommonName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
@@ -26,6 +29,8 @@ public:
     virtual string whatAmI();
     virtual string getSpecialString();
     virtual float getSpecialFloat();
+    virtual void setSpecialString(string s);
+    virtual void setSpecialFloat(float f);
 };
     
 

@@ -52,3 +52,27 @@ void Reptile::LooseTail()
 string Reptile::whatAmI() {
     return "Reptile";
 }
+
+string Reptile::getSpecialString(){
+    vector <string> fh = {"Khaki", "Green", "Brown", "Black", "White", "Light Blue", "Dark Blue", "Red", "Yellow", "Orange", "Leopard", "Zebra", "Camo"};
+    int num = rand() % fh.size();
+    return fh[num];
+}
+
+float Reptile::getSpecialFloat(){
+    return ((float) rand() / (float) RAND_MAX) * 2;
+}
+
+void Reptile::setSpecialString(string s){
+    this->camouflage = s;
+}
+
+void Reptile::setSpecialFloat(float f){
+    this->tail_length = f;
+}
+
+string Reptile::chooseCommonName(){
+    vector <string> cn = {"Snake", "Lizard", "Turtle", "Crocodile", "Alligator", "Iguana", "Gecko", "Chameleon", "Monitor Lizard", "Komodo Dragon", "Gila Monster", "Salamander", "Frog", "Toad", "Newt", "Tortoise", "Snapping Turtle", "Box Turtle", "Soft Shell Turtle", "Sea Turtle", "Alligator Snapping Turtle", "American Crocodile", "American Alligator", "Asian Water Monitor", "Burmese Python", "Caiman Lizard"};
+    int num = rand() % cn.size();
+    return cn[num];
+}

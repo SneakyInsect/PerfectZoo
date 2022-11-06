@@ -15,6 +15,7 @@ public:
     Mammal(string name, string common_name, int weight);
     Mammal(string name, string common_name, int weight, string skin_covering, float gestation_period);
     string getCommonName();
+    virtual string chooseCommonName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
@@ -24,6 +25,10 @@ public:
     void setSkinCovering(string skin_covering);
     void setGestationPeriod(float gestation_period);
     virtual string whatAmI();
+    virtual string getSpecialString();
+    virtual float getSpecialFloat();
+    virtual void setSpecialString(string s);
+    virtual void setSpecialFloat(float f);
 
 };
 

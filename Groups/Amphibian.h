@@ -17,6 +17,7 @@ public:
     Amphibian(string name, string common_name, int weight);
     Amphibian(string name, string common_name, int weight, string skin_pattern, float jump_height);
     string getCommonName();
+    virtual string chooseCommonName();
     int getWeight();
     void setCommonName(string name);
     void setWeight(int weight);
@@ -27,6 +28,10 @@ public:
     void setJumpHeight(float jump_height);
     void Ribbit();
     virtual string whatAmI();
-};
+    virtual string getSpecialString();
+    virtual float getSpecialFloat();
+    virtual void setSpecialString(string s);
+    virtual void setSpecialFloat(float f);
+    };
 
 #endif //ANIMAL_AMPHIBIAN_H

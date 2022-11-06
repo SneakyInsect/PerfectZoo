@@ -36,4 +36,24 @@ string Bird::whatAmI(){
     return "Bird";
 }
 
+string Bird::getSpecialString(){
+    vector <string> colors = {"Blue", "yellow", "Orange", "Black", "White", "purple", "Fuxia", "Magenta", "Cyan", "Green", "baby blue"};
+
+    int num = rand() % colors.size();
+    return colors[num];
+}
+
+float Bird::getSpecialFloat(){
+
+    return ((float)rand() / (float)RAND_MAX) * 200;
+}
+
+void Bird::setSpecialString(string s){
+    this->feather_color = s;
+}
+
+void Bird::setSpecialFloat(float f){
+    this->wing_span = f;
+}
+
 
