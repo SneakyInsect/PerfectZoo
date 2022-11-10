@@ -1,7 +1,7 @@
 #ifndef ANIMAL_FISH_H
 #define ANIMAL_FISH_H
 
-#include "../Animal.h"
+#include "notmain/Animal.h"
 
 #include <iostream>
 #include <string>

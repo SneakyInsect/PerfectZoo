@@ -1,7 +1,7 @@
 #include <iostream>
-#include ".\Animal.h"
-#include ".\Zoo.h"
-#include ".\Breeder.h"
+#include "notmain/Animal.h"
+#include "notmain/Zoo.h"
+#include "notmain/Breeder.h"
 #include "Groups\Mammal.h"
 #include "Groups\Reptile.h"
 #include "Groups\Fish.h"

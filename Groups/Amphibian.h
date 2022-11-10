@@ -1,7 +1,7 @@
 #ifndef ANIMAL_AMPHIBIAN_H
 #define ANIMAL_AMPHIBIAN_H
 
-#include "../Animal.h"
+#include "notmain/Animal.h"
 
 #include <iostream>
 #include <string>

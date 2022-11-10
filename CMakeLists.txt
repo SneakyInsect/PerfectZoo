@@ -18,10 +18,10 @@ add_executable(PerfectZoo
         Groups/Bird.cpp
         Groups/Fish.h
         Groups/Fish.cpp
-        Animal.cpp
-        Animal.h
+        notmain/Animal.cpp
+        notmain/Animal.h
         #Zoo.cpp
-        Zoo.h
-        Breeder.h
+        notmain/Zoo.h
+        notmain/Breeder.h
         #Breeder.cpp
         )
