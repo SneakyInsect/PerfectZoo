@@ -7,6 +7,7 @@ include_directories(.)
 include_directories(Groups)
 
 add_executable(PerfectZoo
+        main.cpp
         Groups/Mammal.h
         Groups/Mammal.cpp
         Groups/Reptile.h
@@ -19,6 +20,8 @@ add_executable(PerfectZoo
         Groups/Fish.cpp
         Animal.cpp
         Animal.h
-        main.cpp
-        Zoo.cpp
-        Zoo.h Breeder.h Breeder.cpp)
+        #Zoo.cpp
+        Zoo.h
+        Breeder.h
+        #Breeder.cpp
+        )

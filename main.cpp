@@ -11,23 +11,24 @@
 using namespace std;
 
 int main(){
-    Zoo *zoo = new Zoo("Perfect Zoo");
+    Zoo<Animal*> zoo("PerfectZoo");
 
     int n;
     cout<<"How many starting animals would you like: (int)"<<endl;
     cin>>n;
     for(int i = 0; i < n; i++) {
-        zoo->addRandomAnimal();
+        zoo.addRandomAnimal();
     }
 
-    cout<<zoo->toString()<<endl;
+    cout<<zoo.toString()<<endl;
 
-    float pb = 0.6;
+    float pb = 0;
     float pe = 1-pb;
+    int maxAnimals = 100;
 
-    Breeder *breeder = new Breeder(zoo, pb, pe, 10);
+    Breeder<Animal*> *breeder = new Breeder<Animal*>(&zoo, pb, pe, maxAnimals);
     breeder->simulate();
     
-    delete zoo;
+    //delete zoo;
     return 0;
 }

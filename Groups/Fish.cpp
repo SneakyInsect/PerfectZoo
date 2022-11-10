@@ -21,7 +21,7 @@ Fish::Fish(string name, string common_name, int weight, string scales_shape, flo
 }
 
 string Fish::toString(){
-    return Animal::toString() + " I'm a fish my scales are " + this->scales_shape + " and I can swim " + to_string(this->swim_speed) + " km/h";
+    return Animal::toString() + " I'm a fish my scales are " + this->scales_shape + "-shape and I can swim " + to_string(this->swim_speed) + " km/h";
 }
 
 string Fish::getScalesShape(){
