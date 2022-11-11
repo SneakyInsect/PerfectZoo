@@ -22,7 +22,7 @@ int main(){
 
     cout<<zoo.toString()<<endl;
 
-    float pb = 0;
+    float pb = 0.5;
     float pe = 1-pb;
     int maxAnimals = 100;
 
